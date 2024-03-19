@@ -81,7 +81,7 @@ content = """
 ```
 """
 class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
+    def do_GET(self): 
         print("request received")
         self.send_response(200)
         self.send_header('content-type', 'text/html; charset=utf-8')
